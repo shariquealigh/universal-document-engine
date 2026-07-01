@@ -1,0 +1,160 @@
+.
+├── assets
+│   ├── fonts
+│   ├── input
+│   ├── output
+│   └── samples
+├── CHANGELOG.md
+├── dist
+├── docs
+│   ├── Architecture.md
+│   ├── CodingStandards.md
+│   ├── EngineAPI.md
+│   ├── ExporterAPI.md
+│   ├── FolderStructure.md
+│   ├── KnowledgeGraph.md
+│   ├── PluginAPI.md
+│   ├── Roadmap.md
+│   ├── StructuredDocument.md
+│   └── Workflow.md
+├── examples
+│   ├── image-to-json.ts
+│   ├── inspect-pdf.ts
+│   ├── pdf-to-docx.ts
+│   ├── pdf-to-html.ts
+│   ├── plugin-demo.ts
+│   └── workflow-demo.ts
+├── LICENSE
+├── package.json
+├── README.md
+├── scripts
+│   ├── build.sh
+│   ├── clean.sh
+│   ├── lint.sh
+│   ├── release.sh
+│   ├── start.sh
+│   └── test.sh
+├── setup_project.sh
+├── src
+│   ├── analysis
+│   │   ├── DrawingAnalyzer.ts
+│   │   ├── FontAnalyzer.ts
+│   │   ├── ImageAnalyzer.ts
+│   │   ├── LayoutAnalyzer.ts
+│   │   ├── MetadataAnalyzer.ts
+│   │   ├── SemanticAnalyzer.ts
+│   │   ├── TableAnalyzer.ts
+│   │   └── TextAnalyzer.ts
+│   ├── core
+│   │   ├── Context.ts
+│   │   ├── Engine.ts
+│   │   ├── EventBus.ts
+│   │   ├── ExportEngine.ts
+│   │   ├── ImportEngine.ts
+│   │   ├── Logger.ts
+│   │   ├── Pipeline.ts
+│   │   └── Plugin.ts
+│   ├── engines
+│   │   ├── engine-bim
+│   │   ├── engine-cad
+│   │   ├── engine-csv
+│   │   ├── engine-docx
+│   │   │   ├── builders
+│   │   │   ├── DOCXEngine.ts
+│   │   │   ├── parser
+│   │   │   └── renderer
+│   │   ├── engine-excel
+│   │   ├── engine-html
+│   │   │   ├── HTMLEngine.ts
+│   │   │   ├── parser
+│   │   │   └── renderer
+│   │   ├── engine-image
+│   │   │   ├── detector
+│   │   │   ├── ImageEngine.ts
+│   │   │   └── processor
+│   │   ├── engine-json
+│   │   ├── engine-markdown
+│   │   ├── engine-ocr
+│   │   │   ├── OCREngine.ts
+│   │   │   └── providers
+│   │   ├── engine-pdf
+│   │   │   ├── inspector
+│   │   │   │   ├── builders
+│   │   │   │   ├── catalog
+│   │   │   │   ├── handlers
+│   │   │   │   ├── layout
+│   │   │   │   ├── parsers
+│   │   │   │   └── strategies
+│   │   │   └── PDFEngine.ts
+│   │   ├── engine-powerpoint
+│   │   └── engine-xml
+│   ├── exporters
+│   │   ├── csv
+│   │   ├── docx
+│   │   ├── html
+│   │   ├── json
+│   │   ├── markdown
+│   │   ├── pdf
+│   │   └── xml
+│   ├── index.ts
+│   ├── knowledge
+│   │   ├── DocumentClassifier.ts
+│   │   ├── EntityExtractor.ts
+│   │   ├── KnowledgeGraph.ts
+│   │   ├── Ontology.ts
+│   │   ├── RelationshipBuilder.ts
+│   │   └── SearchIndex.ts
+│   ├── models
+│   │   ├── BoundingBox.ts
+│   │   ├── DocumentMetadata.ts
+│   │   ├── Heading.ts
+│   │   ├── Image.ts
+│   │   ├── KnowledgeNode.ts
+│   │   ├── Paragraph.ts
+│   │   ├── Relationship.ts
+│   │   ├── Resource.ts
+│   │   ├── StructuredDocument.ts
+│   │   ├── StructuredElement.ts
+│   │   ├── StructuredPage.ts
+│   │   ├── Style.ts
+│   │   └── Table.ts
+│   ├── plugins
+│   │   ├── ai
+│   │   ├── barcode
+│   │   ├── bim
+│   │   ├── cad
+│   │   ├── ocr
+│   │   ├── qrcode
+│   │   ├── spellcheck
+│   │   ├── tables
+│   │   ├── translation
+│   │   └── validation
+│   ├── registry
+│   │   ├── EngineRegistry.ts
+│   │   ├── ExporterRegistry.ts
+│   │   ├── PluginRegistry.ts
+│   │   └── WorkflowRegistry.ts
+│   ├── utils
+│   │   ├── DateUtils.ts
+│   │   ├── FileUtils.ts
+│   │   ├── HashUtils.ts
+│   │   ├── LoggerUtils.ts
+│   │   ├── PathUtils.ts
+│   │   └── StringUtils.ts
+│   └── workflow
+│       ├── ExecutionContext.ts
+│       ├── PipelineRunner.ts
+│       ├── WorkflowStep.ts
+│       └── Workflow.ts
+├── test
+│   ├── core
+│   ├── engines
+│   ├── exporters
+│   ├── integration
+│   ├── models
+│   ├── plugins
+│   └── workflow
+├── tsconfig.json
+└── universal-document-engine-tree.txt
+
+74 directories, 84 files

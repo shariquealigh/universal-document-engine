@@ -1,0 +1,28 @@
+{
+  "name": "universal-document-engine",
+  "version": "0.1.0-alpha",
+  "description": "Universal Document Engine (UDE)",
+  "type": "module",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "pdf",
+    "docx",
+    "document",
+    "parser",
+    "typescript",
+    "ude"
+  ],
+  "author": "Syed Sharique Ali",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.2"
+  }
+}
