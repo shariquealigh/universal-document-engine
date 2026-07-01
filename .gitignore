@@ -23,3 +23,25 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
+# LibreOffice temporary lock files
+.~lock*
+
+# Office temporary files
+~$*
+
+# Build output
+dist/
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Operating System
+.DS_Store
+Thumbs.db
