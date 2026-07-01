@@ -9,7 +9,8 @@ export interface Logger {
      * Current minimum logging level.
      */
     level: LogLevel;
-
+	banner(message: string): void;
+	
     debug(message: string): void;
 
     info(message: string): void;

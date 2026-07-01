@@ -1,32 +1,40 @@
-import { Version } from "./Version.js";
+/**
+ * Universal Document Engine
+ * Kernel
+ */
+
+import { Logger } from "../logging/Logger.js";
 import { ConsoleLogger } from "../logging/ConsoleLogger.js";
+import { Version } from "./Version.js";
 
 export class UDEKernel {
 
-    private readonly logger = new ConsoleLogger();
+    private readonly logger: Logger;
 
-    public async boot(): Promise<void> {
+    public constructor() {
 
-        console.log(Version.banner());
-
-        this.logger.info("Booting UDE Kernel...");
-
-        this.logger.info("Kernel Ready.");
+        this.logger = new ConsoleLogger();
 
     }
 
-    public async shutdown(): Promise<void> {
+    public getLogger(): Logger {
 
-        this.logger.info("Shutting down...");
-
-        this.logger.info("Shutdown Complete.");
+        return this.logger;
 
     }
 
-    public version(): string {
+    public getVersion(): string {
 
-        return Version.VERSION;
+    return Version.title();
 
-    }
+}
+
+public start(): void {
+
+    this.logger.banner(Version.banner());
+
+    this.logger.info("Kernel started.");
+
+}
 
 }

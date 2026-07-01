@@ -9,6 +9,12 @@ export class ConsoleLogger implements Logger {
         this.level = level;
     }
 
+	public banner(message: string): void {
+
+    console.log(message);
+
+}
+
     public debug(message: string): void {
         this.log(LogLevel.DEBUG, message);
     }
