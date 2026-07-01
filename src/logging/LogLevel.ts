@@ -1,13 +1,18 @@
+/**
+ * Universal Document Engine
+ * Logging Levels
+ */
+
 export enum LogLevel {
 
-    TRACE,
+    DEBUG = 0,
 
-    DEBUG,
+    INFO = 1,
 
-    INFO,
+    WARN = 2,
 
-    WARN,
+    ERROR = 3,
 
-    ERROR
+    FATAL = 4
 
 }
