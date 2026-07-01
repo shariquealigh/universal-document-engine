@@ -1,8 +1,14 @@
 import { LogLevel } from "./LogLevel.js";
 
+/**
+ * Common logging interface for UDE.
+ */
 export interface Logger {
 
-    trace(message: string): void;
+    /**
+     * Current minimum logging level.
+     */
+    level: LogLevel;
 
     debug(message: string): void;
 
@@ -12,6 +18,10 @@ export interface Logger {
 
     error(message: string): void;
 
-    level(): LogLevel;
+    fatal(message: string): void;
 
+    /**
+     * Generic logging method.
+     */
+    log(level: LogLevel, message: string): void;
 }
