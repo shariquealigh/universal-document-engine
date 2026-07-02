@@ -8,4 +8,14 @@ export interface EngineManifest {
 
     description: string;
 
+    vendor: string;
+
+    inputs: string[];
+
+    outputs: string[];
+
+    actions: string[];
+
+    priority: number;
+
 }
